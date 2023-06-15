@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Laracon Online | FREE on YouTube on September 14th</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Laracon Online is the digital gathering of people who are passionate about building amazing applications with the Laravel web framework.">
+
+        <!--   Add preloader     -->
+        <script src='../preloader/min/example2.min.js'></script>
+        <script data-preloader src='../preloader-core.js' data-build-version='v1' data-frequency='always'
+                data-duration-hide='300' data-time-fallback='10000' data-min-show-time='2000'></script>
+
+        <script>
+        window.addEventListener('load',  () => {
+            window.dispatchEvent(new CustomEvent("preloaderHide"));
+        })
+        </script>
+        <!--   End preloader     -->
+
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content="Laracon Online | FREE on YouTube on September 14th" />
+        <meta property="og:description" content="Laracon Online is the digital gathering of people who are passionate about building amazing applications with the Laravel web framework." />
+        <meta property="og:image:alt" content="Laracon Online is the digital gathering of people who are passionate about building amazing applications with the Laravel web framework." />
+        <meta property="og:image:height" content="1080" />
+        <meta property="og:image:width" content="1920" />
+        <meta property="og:image" content="https://laracon.net/2022-summer/socialcard.png" />
+        <meta property="og:site_name" content="Laracon Online | FREE on YouTube on September 14th" />
+        <meta property="og:url" content="https://laracon.net" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Laracon Online | FREE on YouTube on September 14th" />
+        <meta name="twitter:description" content="Laracon Online is the digital gathering of people who are passionate about building amazing applications with the Laravel web framework." />
+        <meta name="twitter:image" content="https://laracon.net/2022-summer/socialcard.png" />
+        <meta name="twitter:image:alt" content="Laracon Online | FREE on YouTube on September 14th" />
+        <meta name="twitter:site" content="@LaraconOnline" />
+        <link rel="icon" type="image/svg+xml" href="2022-summer/assets/favicon.76c91b6e.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap">
+      <script type="module" crossorigin src="2022-summer/assets/index.81d44892.js"></script>
+      <link rel="stylesheet" href="2022-summer/assets/index.023f0487.css">
+      <script src="https://cdn.usefathom.com/script.js" data-site="GCBBNLAX" defer></script>
+    </head>
+  <body>
+
+    <header id="hero" class="relative w-screen">
+        <nav id="navigation" class="menu z-30"
+            x-data="{ scroll:null }"
+            x-on:scroll.window.debounce.50="scroll=window.scrollY>0"
+            x-bind:class="{ 'shadow-lg':scroll }">
+            <a href="#speakers">Speakers</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#partners">Partners</a>
+            <a href="#mingle" class="lg:block hidden">Mingle</a>
+            <a href="#pre-party" class="lg:block hidden">Pre-Party</a>
+            <a href="https://laracon.net/swag" class="md:block hidden">Swag</a>
+            
+            <a href="https://www.youtube.com/c/LaraconOnline" target="_blank" rel="external">Past videos</a>
+        </nav>
+        <div class="clip-hero sm:mt-0 relative z-10 w-screen mt-12"
+            x-data="follow" x-on:mousemove.window.debounce.5="window.innerWidth>767&&movement">
+            <div class="sm:block hidden text-center pointer-events-none">
+                <img x-show="!live" src="2022-summer/hero-bw.jpg" alt="" class="mx-auto">
+                <img x-cloak hidden src="2022-summer/hero-co.jpg" alt="" class="md:block absolute top-0 inset-x hidden mx-auto pointer-events-none"
+                onload="window.innerWidth>767 && this.classList.add('clip') , this.hidden=false" />
+                <img x-cloak x-show="live" src="2022-summer/hero-co.jpg" alt="">
+            </div>
+            <div class="sm:hidden px-3 text-center">
+                <img x-show="!live" src="2022-summer/hero-xs.jpg" alt="" class="mx-auto">
+                <img x-cloak x-show="live" src="2022-summer/hero-xs-co.jpg" alt="" class="mx-auto">
+            </div>
+        </div>
+        <div class="inset-x sm:mt-12 absolute top-0 z-10 -mt-12">
+            <svg class="fill-black lg:h-44 md:h-28 h-20" viewbox="0 0 850 360">
+                <path d="M517.5,248C493.2,211.8,488.9,98.1,548,98.6c7.4,0.1,14.7,2.5,20.4,7.3c20.5,17.2-1.4,39.2-14.2,21.6 c-3.8-5.2-10.5-4-14.5,0.2c-17.4,18.5-17,86.5,4.2,109.2c4.5,4.8,11.3,7.3,17.6,4.6c0,0,0,0,0,0c1.8-0.6,3.2-2.1,3.9-3.9l2-4.9 c0.3-0.8,0.7-1.5,1.1-2.2c4.2-6.3,13.4-7.8,19.7-2.5C609.8,245.8,557.4,302.1,517.5,248z M312.2,267.6c-2.6-6.9-4.9-15.6-6.1-20.3 c-1-4.1-1.5-8.3-1.5-12.5c0-4.9,0.5-9.9,0.2-14.9c-0.2-11.1-14.1-17.4-22.1-9.1c-7.3,8.4-0.3,20.8-11.2,29.2 c-17.1,13.2-36.8-2.7-37.8-23.1c-1-20.9,5-38.5,21.4-46.5c0.9-0.4,1.8-0.7,2.7-1c9.2-2.9,16.2,2,20.4,8.2c0.9,1.4,1.6,2.8,1.8,4 c0.4,2.8,0.5,3.2,0.5,3.2c2.3,10.3,18.6,11.8,21.5,0.5c5.2-55.1-70.2-45.9-86.2-7.7c-20.1,48,11.5,115.3,66.6,86.4 c2.8,10,6.8,19.5,11.9,28.4c1.3,2.3,3,4.4,5.2,6c13.8,10.6,28-6.4,17.1-22.2C315,273.4,313.4,270.6,312.2,267.6z M777.3,154.6 c-0.6-17.1-25.4-17.5-26.7-0.9c0,0.6-0.8,3.7-0.9,4.3c-3.3,50.7-19.4,69.6-19.4,69.6s-3.8-86.1-28.7-80.9c-6,1.3-9.4,5.6-9.8,12.9 c-1.6,27.6-7.8,69.2-41.6,91.3c-5.2,3.4-5.1,12.4,0,16.7c17.8,14.8,56.2-37,55.3-55.5c1.4,30.3-6.2,55.3,4.3,62.5 c15.5,10.7,57.4-35.9,65.7-89.4C777.7,170.8,778.1,164.8,777.3,154.6z M229.3,307.6c-4.6,5-13,6.9-19.1,0 c-21.7-24.5-44.6-48.1-71.9-66.1c-13.7,31.6-48,55-73.7,31.8c-7.5-6.8-12.6-15.8-14.1-25.8c-5.7-38.4,42.6-64.4,77.4-42.8 c12.5-27.9,20.6-57.6,24.6-87.9c-0.1,0.7,1.6-16.6,2.2-24.5c0.3-14.5,22.3-14.5,22.4,0c0.9,43.2-9,86.4-26.9,125.6 c2.5,1.7,5,3.4,7.4,5.1C173.4,235.4,248.2,287.1,229.3,307.6z M116,227.9c-1.5-0.8-8.5-4.9-16-5.4c-9-0.5-27.1,6.8-23.5,22.3 c0.6,2.4,1.5,4.4,2.9,6.5l0.5,0.7c12.5,12.9,25.3-4.7,31.3-15.9C112.8,233.4,114.4,230.7,116,227.9z M491.5,290.5 c-2.8-1.1-5.3-2.9-7.4-5.2c-6.3-7-11.9-14.8-16.3-23.1c-28,26-69.9,5.7-80.8-27.4c-7.8-19.4-8.3-42.7,0.3-62 c-2.4-12.6-4.7-25.2-7-37.9c-7,4.4-14.4,8.1-22.1,11.1c10.8,37.7,10.9,80.2-4.9,116.6c-6,11.6-25,3.5-21.2-8.9 c2.2-8.2,4.6-16.3,6.1-24.6c3.3-15.2,2.9-40.2,1.3-50.7c-1-8.6-3.1-17-5.5-25.3c-27.5,8-59.8-18-47.9-43.6c3.1-6.6,8.4-12,15.2-14.7 c18.9-7.4,41.1,7.4,47.8,26.6c0,0,0,0,0,0c9.8-4.1,20.7-10.3,29.3-17.7c1.2-1,2.5-2,3.9-2.8c24.5-13.7,22,31.9,26.7,46.5 c53.3-32.3,87.6,39.1,60.6,47.3c-2.8,0.9-5.8,0.7-8.4-0.7c-9.2-5.1-2.4-19.6-15.3-26.2c-10.4-6.5-23.7-1.2-30.4,8 c0.1-0.2-3.4,4.8-5.1,8.8c0-0.1,0.1-0.1,0.1-0.2c-9.3,22.7,2.3,69.2,33.6,61.2c-0.1,0.1-0.2,0.1-0.3,0.2c0.3-0.2,2.5-1,1.4-0.8 c1.1-0.6,2.2-1.1,3.2-1.7c-0.1,0.1-0.2,0.2-0.4,0.4c1.7-1.4,3.2-2.9,4.6-4.6c-0.1,0.1-0.2,0.2-0.4,0.3c3.1-4.6,4.3-10.5,3-15.9 c0,0,0,0,0,0c-3.4-16.1,21.2-24.3,25.4-7.8c0.1,0.5,0.4,1.7,0.5,2.2c2.5,14,7.6,27.4,15.2,39.5c0.5,0.9,1.6,2.4,2.4,3.6 c0.6,0.9,1.3,1.7,2.1,2.4C516.6,276,507.2,296.5,491.5,290.5z M326.3,128.9c-0.9-1.4-7-13.8-14.9-15.7c-3.5-0.5-5.2,1.7-5.5,5.2 C305.8,125,325.3,128.7,326.3,128.9z M588.4,143.6c39.9-42.8,108,10.3,75,60.7C622.3,260.5,540.6,195,588.4,143.6z M646.6,175 c-0.3-14.2-11-25.1-25.2-22c-12.8,2.8-21.5,12.1-22,25.2c-0.6,14.4,11.1,23.8,25.2,22C637.6,198.5,646.9,188.1,646.6,175z"/>
+                <path d="M431.1,359.4c-3.5,1.2-8.2,0.1-11.9-0.1c-1.8-0.1-3.4-1.5-3.4-3.4c0.1-13.5,0-26.9,1.2-40.3c0.2-2,2.9-2,3.1,0 c1.5,12.3,1.8,24.6,2.3,36.9c3.2,0,6.6,0,9.4,1.2C434.5,355,433.4,358.6,431.1,359.4z M380.7,325.6c0.8,5.4,0.8,10.9,0,16.3 c-0.9,6.2-3.9,21.7-13.7,17.3c-3.9-1.8-5.6-6.4-6.9-10.2c-1.7-4.9-2.5-10.2-2.4-15.4c0-3,0.5-6.9,1.6-10.3c0.5-2.9,1.6-5.7,4-7.9 c3.5-3.1,8.7-3.8,12.4-0.7C379,317.4,380.2,321.6,380.7,325.6z M374.3,325.2c-0.6-2.8-2.2-7.7-5.9-5.5c-3.6,2.1-3.5,7.6-3.7,11.2 c-0.1,1.4-0.9,2.2-1.8,2.5c0.1,2.2,0.3,4.2,0.6,5.8c0.6,4,1.8,8.1,3.7,11.7c0.6,1.1,1.5,3.1,3,2.8c1.2-0.3,2-2.4,2.3-3.4 C375.3,342.6,375.9,333.2,374.3,325.2z M409.3,323.7c-0.2-3.3-0.1-6.8-0.9-10c-0.7-2.7-5.5-3.1-5.9,0c-0.9,6.3,0.2,13.3,0.5,19.7 c0.1,1.6,0.2,3.3,0.2,4.9c-1.2-2.3-2.4-4.5-3.7-6.8c-1.7-3.2-3.5-6.3-5.4-9.5c-1.7-3-3.4-6.1-6.2-8.2c-0.3-0.2-0.6-0.2-1-0.1 c-0.7-0.1-1.4,0.3-1.5,1.1c-1.1,6.7-0.4,13.8-0.2,20.5c0.2,6.6,0.2,13.3,0.7,20c-0.1,0.4-0.1,0.8,0,1.2c0.1,0.4,0.2,0.7,0.2,1.1 c0.7,3.5,6.4,2.7,6.2-0.8c-0.2-7.1-1-14.3-1.6-21.4c-0.2-2.8-0.4-5.6-0.6-8.4c1.2,2.6,2.4,5.2,3.7,7.8c3.5,6.9,6.9,13.8,10.4,20.6 c1.6,3,6.7,1.7,6.5-1.8c-0.4-6.7-0.7-13.5-1.1-20.2C409.7,330.2,409.5,327,409.3,323.7z M507.9,353.1c-2.1-0.2-4.3,0.9-6.4,0.1 c-2.1-0.8-2.3-3.6-2.7-5.5c-0.7-3.1-1.1-6.3-1.4-9.5c1.4,0,2.8-0.1,4.2-0.2c2.2-0.2,4.3-0.1,5.9-1.7c1.2-1.2,1-3.4-0.5-4.2 c-2.1-1.1-3.9-0.4-6.1,0.1c-1.3,0.3-2.5,0.5-3.7,0.9c0-0.1,0-0.2,0-0.4c-0.1-4.1-0.4-9,1.1-13c0.8-2,2.3-3.9,4.3-4.7 c1.5-0.6,3.2-0.5,4.7-1c0.1,0,0.2-0.1,0.2-0.2c-0.3-5.3-8.2-3.3-10.7-1.2c-5.2,4.3-5.5,12.1-5.6,18.3c-0.1,7.3,0.2,15.8,2.7,22.7 c2.2,6.1,10,8.2,15.5,5C512,356.9,510.6,353.4,507.9,353.1z M481.1,312.2c-0.8-4.2-7.2-2.4-6.4,1.8c1.5,7.7,2.7,15.8,3.2,23.8 c-0.8-1.6-1.6-3.2-2.4-4.7c-3.4-6.6-7-13.6-12.1-19c-1.5-1.6-4.8,0.1-3.9,2.3c0,0,0,0.1,0.1,0.1c-0.5,2.5-0.4,5.1-0.5,7.7 c-0.1,3.7-0.1,7.5,0,11.2c0.2,7.2,0.5,14.4,0.9,21.5c-0.5,3.6,6.4,4.7,6.2,0.2c-0.3-7.5-0.8-15-1.5-22.4c-0.3-3.2-0.6-6.3-1-9.5 c1.8,3.4,3.7,6.8,5.4,10.2c3.2,6.7,5.8,13.6,8.7,20.5c1.3,3.2,6.8,3.3,6.6-0.9c-0.2-7.2,0-14.4-0.6-21.7 C483.4,326.2,482.4,319.2,481.1,312.2z M452.4,354.9c-1.1-0.8-2.5-1-3.8-0.9c0.2-1.7-0.1-3.4-0.2-5.3c-0.3-3.9-0.5-7.7-0.8-11.6 c-0.2-3.6-0.4-7.3-0.7-10.9c-0.1-1.8-0.1-3.9-0.3-5.9c0.9,0,1.8,0,2.7,0c4.1,0.1,4-6.6,0-6.3c-4.3,0.4-9.9,0-13.8,2.1 c-1,0.5-1.1,2.3,0,2.8c1.6,0.7,3.4,1.1,5.3,1.2c-0.1,1.8,0.1,3.7,0.2,5.3c0.1,3.9,0.3,7.7,0.4,11.6c0.1,3.6,0.3,7.3,0.4,10.9 c0.1,2.2-0.2,4.6,0.4,6.6c-1.3,0.2-2.6,0.5-3.9,0.9c-1.2,0.3-1.1,2,0,2.3c2.4,0.8,4.6,1.3,7.1,1.6c2.4,0.3,4.9,1.1,7.1-0.3 C454,358.1,453.9,356,452.4,354.9z"/>
+            </svg>
+        </div>
+    </header>
+
+    <section id="about" class="md:w-2/3 lg:w-1/2 segment"
+        style="z-index:7">
+        <p class="title">ABOUT</p>
+        <h2 class="subtitle mb-6 leading-none">
+            The largest Laravel event of the year
+            <div class="flex items-center justify-center">
+                <span>streaming September 14th on</span>
+                <svg class="fill-red-600 w-10 h-auto ml-2 mr-1.5" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                </svg>
+                <span><b>YouTube</b>.</span>
+            </div>
+        </h2>
+        <p>Once again we'll be streaming Laracon for free on YouTube allowing us to reach the entire Laravel community. A huge “THANK YOU” to our <a href="#partners" class="font-semibold">incredible partners</a> for helping us achieve this!</p>
+        <p><b>All talks are brand new</b>, never before presented at any Laracon and delivered live during the event. We have 18 amazing speakers lined up <u class="decoration-yellow-300 underline-offset-2">including a keynote from Taylor Otwell</u> on the state of Laravel and what's new in Laravel.</p>
+        <div class="md:-mx-3 mx-3 mt-6">
+            <iframe src="https://www.youtube.com/embed/f4QShF42c6E" allowfullscreen frameborder="0"
+                class="aspect-video rounded-xl w-full overflow-hidden shadow-xl">
+            </iframe>
+        </div>
+        <a href="https://www.youtube.com/watch?v=f4QShF42c6E" target="_blank" rel="external" class="cta mt-6">
+            Set a reminder
+        </a>
+        <p class="lg:w-1/2 mx-auto mt-12">
+            <b>Can't watch it <span class="text-red-500">●</span> LIVE?</b>
+            <br>
+            <small class="block text-base leading-tight mt-1.5"><B>No problem</B>, all talks will be recorded and available online for viewing at your convenience shortly after the conference ends.</small>
+        </p>
+    </section>
+
+
+
+    <section id="speakers" class="sm:block from-white to-gray-50 bg-gradient-to-br shadow-gray-100 hidden shadow-xl"
+        style="z-index:6">
+        <div class="segment">
+            <h2 class="title">SPEAKERS</h2>
+            <p class="subtitle">The best speakers, contributors, and educators <br class="sm:block hidden">from around the Laravel Community.</p>
+            <ul class="speakers sm:mt-6 mt-3">
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/kai-sassnowski.jpg" alt="'speaker: kai sassnowski, type aficionado">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/warsh33p" target="_blank" rel="external">Kai <span>Sassnowski</span></a></h3>
+                        <p class="speaker-title">Type Aficionado</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/bosum-egberinde.jpg" alt="'speaker: bosum egberinde, developer at shopify">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-2xl xl:text-xl"><a href="https://twitter.com/bosunski" target="_blank" rel="external">Bosun <span>Egberinde</span></a></h3>
+                        <p class="speaker-title">Developer @ Shopify</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/caleb-porzio.jpg" alt="'speaker: caleb porzio, creator of alpine and livewire">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/calebporzio" target="_blank" rel="external"><span>Caleb</span> Porzio</a></h3>
+                        <p class="speaker-title">Creator of Alpine & Livewire</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/marje-holmstrom-sabo.jpg" alt="'speaker: marje holmstrom-sabo, people ops at tighten">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-xl xl:text-lg sm:text-2xl"><a href="https://twitter.com/minn_finn" target="_blank" rel="external">Marje <span>Holmstrom-Sabo</span></a></h3>
+                        <p class="speaker-title">People Ops @ Tighten</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/tim-martin.jpg" alt="'speaker: tim martin, software engineer at curology">
+                        </figure>
+                        <h3 class="speaker-name">Tim <span>Martin</span></h3>
+                        <p class="speaker-title">Softw. Eng @ Curology</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/ralph-j-smit.jpg" alt="'speaker: ralph j. smit, freelance software engineer">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/ralphjsmit" target="_blank" rel="external"><span>Ralph</span> J. Smit</a></h3>
+                        <p class="speaker-title">Freelance Softw. Eng</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/marcel-pociot.jpg" alt="'speaker: marcel pociot, cto at beyondcode">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/marcelpociot" target="_blank" rel="external"><span>Marcel</span> Pociot</a></h3>
+                        <p class="speaker-title">CTO @ BeyondCode</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/caneco.jpg" alt="'speaker: caneco, full-stack developer at medicare">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/caneco" target="_blank" rel="external">Caneco</a></h3>
+                        <p class="speaker-title">Full-Stack Dev @ Medicare</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/matt-stauffer.jpg" alt="'speaker: matt stauffer, partner at tighter">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/stauffermatt" target="_blank" rel="external"><span>Matt</span> Stauffer</a></h3>
+                        <p class="speaker-title">Partner @ Tighten</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/taylor-otwell.jpg" alt="'speaker: taylor otwell, creator of laravel">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/taylorotwell" target="_blank" rel="external">Taylor <span>Otwell</span></a></h3>
+                        <p class="speaker-title">Creator of Laravel</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/aaron-francis.jpg" alt="'speaker: aaron francis, marketing engineer at tupple">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/aarondfrancis" target="_blank" rel="external"><span>Aaron</span> Francis</a></h3>
+                        <p class="speaker-title">Marketing Eng @ Tuple</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/christoph-rumpel.jpg" alt="'speaker: christoph rumpel, developer and author">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-2xl xl:text-xl"><a href="https://twitter.com/christophrumpel" target="_blank" rel="external"><span>Christoph</span> Rumpel</a></h3>
+                        <p class="speaker-title">Developer & Author</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/rissa-jackson.jpg" alt="'speaker: rissa jackson, full-stack engineer at loop">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/rissa_bubbles" target="_blank" rel="external">Rissa <span>Jackson</span></a></h3>
+                        <p class="speaker-title">Full-Stack Eng @ Loop</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/alex-six.jpg" alt="'speaker: alex six, project lead at kirschbaum">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/alexandersix_" target="_blank" rel="external"><span>Alex</span> Six</a></h3>
+                        <p class="speaker-title">Project Lead @ Kirschbaum</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/freek-van-der-herten.jpg" alt="'speaker: freek van der herten, developer at spatie">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-xl sm:text-2xl xl:text-lg"><a href="https://twitter.com/freekmurze" target="_blank" rel="external">Freek <span>Van der Herten</span></a></h3>
+                        <p class="speaker-title">Developer @ Spatie</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/chris-fidao.jpg" alt="'speaker: chris fidao, laravel specialist at fly.io">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/fideloper" target="_blank" rel="external"><span>Chris</span> Fidao</a></h3>
+                        <p class="speaker-title">Laravel Specialist @ Fly.io</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/luke-downing.jpg" alt="'speaker: luke downing, full-stack developer at worksome">
+                        </figure>
+                        <h3 class="speaker-name"><a href="https://twitter.com/LukeDowning19" target="_blank" rel="external"><span>Luke</span> Downing</a></h3>
+                        <p class="speaker-title">Full-Stack Dev @ Worksome</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/stephen-ress-carter.jpg" alt="'speaker: stephen ress-carter, security consultant">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-xl xl:text-lg"><a href="https://twitter.com/valorin" target="_blank" rel="external">Stephen <span>Rees-Carter</span></a></h3>
+                        <p class="speaker-title">Security Consultant</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <figure class="speaker-picture">
+                            <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/speakers/colin-decarlo.jpg" alt="'speaker: colin decarlo, developer at vehikl">
+                        </figure>
+                        <h3 class="speaker-name xxl:text-xl xl:text-lg"><a href="https://twitter.com/colindecarlo" target="_blank" rel="external">Colin <span>DeCarlo</span></a></h3>
+                        <p class="speaker-title">Developr @ Vehikl</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section id="schedule" x-data="schedule" class="shadow-gray-200 relative shadow-xl"
+        style="z-index:5">
+        <div class="segment">
+            <h2 class="title">SCHEDULE</h2>
+            <p class="subtitle mb-3"><b>8</b> smooth-pace talks from a wide variety of topics <br class="sm:block hidden">and <b>10</b> lightning talks to charge-up your skills.</p>
+            <small class="subsubtitle mb-6">All times are in <b x-text="zone">Your/Timezone</b></small>
+            <ol x-ref="schedule" class="schedule">
+                <li>
+                    <time x-text="list[0]" datetime="2022-09-14T08:45:00.000">8:45am</time>
+                    <div class="talk"><code>LARACON_INIT;</code></div>
+                </li>
+                <li>
+                    <time x-text="list[1]" datetime="2022-09-14T09:00:00.000">9:00am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Not Quite My Type</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/warsh33p" target="_blank" rel="external">Kai Sassnowski</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[2]" datetime="2022-09-14T09:40:00.000">9:40am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Kubernetes and Laravel</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/bosunski" target="_blank" rel="external">Bosun Egberinde</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[3]" datetime="2022-09-14T10:20:00.000">10:20am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">The future of Livewire</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/calebporzio" target="_blank" rel="external">Caleb Porzio</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[4]" datetime="2022-09-14T11:00:00.000">11:00am</time>
+                    <div class="talk"><code>break;</code></div>
+                </li>
+                <li>
+                    <time x-text="list[5]" datetime="2022-09-14T11:20:00.000">11:20am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Sustainable Self-Care</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/minn_finn" target="_blank" rel="external">Marje Holmstrom-Sabo</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[6]" datetime="2022-09-14T11:35:00.000">11:35am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Let's Get Physical: <span>Database Internals and You</span></h3>
+                        <p class="talk-speaker">by Tim Martin</p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[7]" datetime="2022-09-14T11:50:00.000">11:50am</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Deep Dive into Carbon</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/ralphjsmit" target="_blank" rel="external">Ralph J. Smit</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[8]" datetime="2022-09-14T12:05:00.000">12:05pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">UI and Component testing <span>with Cypress</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/marcelpociot" target="_blank" rel="external">Marcel Pociot</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[9]" datetime="2022-09-14T12:20:00.000">12:20pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">The Hitchhiker's Guide <span>to the Laravel Community</span></h3>
+                        <p class="talk-speaker"><a href="https://twitter.com/caneco" target="_blank" rel="external">Caneco</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[10]" datetime="2022-09-14T12:35:00.000">12:35pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Abstracting too early</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/stauffermatt" target="_blank" rel="external">Matt Stauffer</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[11]" datetime="2022-09-14T13:15:00.000">13:15pm</time>
+                    <div class="talk"><code>break;</code></div>
+                </li>
+                <li>
+                    <time x-text="list[12]" datetime="2022-09-14T13:35:00.000">13:35pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Laravel Update</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/taylorotwell" target="_blank" rel="external">Taylor Otwell</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[13]" datetime="2022-09-14T14:35:00.000">14:35pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Database Performance <span>for Application Developers</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/aarondfrancis" target="_blank" rel="external">Aaron Francis</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[14]" datetime="2022-09-14T15:15:00.000">15:15pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Christoph Dreams <span>of Simple Code</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/christophrumpel" target="_blank" rel="external">Christoph Rumpel</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[15]" datetime="2022-09-14T15:55:00.000">15:55pm</time>
+                    <div class="talk"><code>break;</code></div>
+                </li>
+                <li>
+                    <time x-text="list[16]" datetime="2022-09-14T16:15:00.000">16:15pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Is there any problem Git <span>interactive rebase can't solve?</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/rissa_bubbles" target="_blank" rel="external">Rissa Jackson</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[17]" datetime="2022-09-14T16:30:00.000">16:30pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Meaningful Mentorship</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/alexandersix_" target="_blank" rel="external">Alex Six</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[18]" datetime="2022-09-14T16:45:00.000">16:45pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">I shall say… <span>err define this only once</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/freekmurze" target="_blank" rel="external">Freek Van der Herten</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[19]" datetime="2022-09-14T17:00:00.000">17:00pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">I can't believe it's not local!</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/fideloper" target="_blank" rel="external">Chris Fidao</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[20]" datetime="2022-09-14T17:15:00.000">17:15pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Valid Variants <span>of Validating Validation</span></h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/LukeDowning19" target="_blank" rel="external">Luke Downing</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[21]" datetime="2022-09-14T17:30:00.000">17:30pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">A Grab Bag of Useful Tips</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/colindecarlo" target="_blank" rel="external">Colin DeCarlo</a></p>
+                        <span class="talk-tag-lightning">Lightning talk</span>
+                    </div>
+                </li>
+                <li>
+                    <time x-text="list[22]" datetime="2022-09-14T17:45:00.000">17:45pm</time>
+                    <div class="talk">
+                        <h3 class="talk-title">Browsers are Magical Creatures</h3>
+                        <p class="talk-speaker">by <a href="https://twitter.com/valorin" target="_blank" rel="external">Stephen Rees-Carter</a></p>
+                        <span class="talk-tag">Talk</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+
+
+    <section id="partners" class="from-gray-200 to-gray-100 bg-gradient-to-br"
+        style="z-index:4">
+        <div class="segment">
+            <h2 class="title">PARTNERS</h2>
+            <p class="subtitle">They made everything possible…</p>
+            <p class="lead mt-3">Once again, Laracon Online will be <strong>FREE FOR ALL</strong>. <br>This would not be possible without our amazing partners.</p>
+            <p class="text-center"><b class="thanks">Thank you!</b></p>
+            <p class="text-2xl font-black tracking-wide !mt-12 text-center">GOLD</p>
+            <ul class="partners justify-center xl:w-4/5 lg:w-5/6">
+                <li class="sm:w-1/4">
+                    <a href="https://sentry.io/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/sentry.jpg" alt="gold partner: sentry" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <a href="https://kirschbaumdevelopment.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/kirschbaum.jpg" alt="gold partner: kirschbaum development" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <a href="https://vehikl.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/vehikl.jpg" alt="gold partner: vehikl" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <a href="https://tighten.co/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/tighten.jpg" alt="silver partner: tighten" />
+                    </a>
+                </li>
+            </ul>
+            <p class="mt-12 text-2xl font-black tracking-wide text-center">SILVER</p>
+            <ul class="partners xl:w-3/4 lg:w-4/5 md:w-5/6 justify-center">
+                <li class="sm:w-1/4">
+                    <a href="https://www.curotec.com/services/technologies/laravel/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/curotec.jpg" alt="silver partner: curotec" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <a href="https://jump24.co.uk/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/jump24.jpg" alt="silver partner: jump24" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <a href="https://corporate.aboutyou.de/en/departments/tech/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/aboutyou.jpg" alt="silver partner: about you" />
+                    </a>
+                </li>
+            </ul>
+            <p class="mt-12 text-2xl font-black tracking-wide text-center">COMMUNITY</p>
+            <ul class="partners justify-center xl:w-3/4 lg:w-4/5 md:w-5/6">
+                <li class="sm:w-1/4">
+                    <a href="https://www.devsquad.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/devsquad.jpg" alt="community partner: devsquad" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only">Scout APM</h4>
+                    <a href="https://www.scoutapm.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/scout-apm.jpg" alt="community partner: squat apm" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only">ArborXR</h4>
+                    <a href="https://www.arborxr.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/arbor-xr.jpg" alt="community partner: arborxr" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only"></h4>
+                    <a href="https://www.processmaker.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/process-maker.jpg" alt="community partner: processmaker" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only"></h4>
+                    <a href="https://beyondco.de/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/beyondcode.jpg" alt="community partner: beyondcode" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only"></h4>
+                    <a href="https://backpackforlaravel.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/backpack.jpg" alt="community partner: backpack" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only"></h4>
+                    <a href="https://battle-ready-laravel.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="https://laracon.net/storage/NSuR8YmnwE9iQNhCm1qKnW3IrdQ3Q5I5tQcbO0za.png" alt="community partner: Battle Ready Laravel" />
+                    </a>
+                </li>
+            </ul>
+            <p class="mt-12 text-2xl font-black tracking-wide text-center">FOUNDING PARTNERS</p>
+            <ul class="partners justify-center xl:w-3/4 lg:w-4/5 md:w-5/6">
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only">LaraJobs</h4>
+                    <a href="https://larajobs.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/larajobs.jpg" alt="LaraJobs" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only">Laravel news</h4>
+                    <a href="https://laravel-news.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/laravelnews.jpg" alt="Laravel News" />
+                    </a>
+                </li>
+                <li class="sm:w-1/4">
+                    <h4 class="sr-only">Forge</h4>
+                    <a href="https://forge.laravel.com/?ref=laracon" target="_blank" rel="external" class="partner">
+                        <img class="lazy" src="2022-summer/1.gif" data-src="2022-summer/partners/forge.jpg" alt="Forge" />
+                    </a>
+                </li>
+            </ul>
+            <p class="lead mt-6">Reach <b>the entire Laravel/PHP community</b>, <br>software startups, and founders.</p>
+            <a href="/partner" class="cta mt-6 mb-3">
+                Become a Partner
+            </a>
+        </div>
+    </section>
+
+
+
+    <section id="mingle" class="segment"
+        style="z-index:3">
+        <h2 class="title">MINGLE</h2>
+        <p class="subtitle">Registered meetups and gatherings, <br>watching Laracon Online.</p>
+        <div x-cloak x-data="{ list:window._X_MINGLE_ }"
+            
+            class="md:w-4/5 sm:rounded-xl relative self-start mx-auto mt-6 bg-gray-200">
+            <span x-bind:class="{ invisible:(list.length<5) }"
+                class="bg-gradient-to-b from-gray-300/75 rounded-t-xl to-transparent h-9 sticky top-0 left-0 block w-full border-0">
+            </span>
+            <ul x-ref="ul" class="md:px-12 px-9 -mt-3 space-y-3">
+                <template x-for="(item,i) in list">
+                    <li class="cursor-pointer">
+                        <a x-bind:href="item.link" target="_blank" tabindex="-1"
+                            class="group block p-6 bg-white rounded-md shadow">
+                            <span x-text="item.city" class="group-hover:text-pink block text-lg font-bold leading-none"></span>
+                            <span x-text="item.desc" class="block mt-1 leading-tight"></span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+            <span x-bind:class="{ invisible:(list.length<5) }"
+                class="bg-gradient-to-b from-transparent to-gray-300/75 rounded-b-xl h-9 sticky bottom-0 left-0 block w-full border-0">
+            </span>
+        </div>
+        <p class="lead mt-6">Throwing a viewing party?</p>
+        <a href="/cdn-cgi/l/email-protection#d0bcb1a2b1babfb2a390a5a3b5a2a3b3b1a0b5feb3bfbd" class="cta mt-3">
+            Get in touch
+        </a>
+    </section>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>window._X_MINGLE_ = [
+        {
+            city: 'Bloomington, IL',
+            desc: 'Come hang out with other developers from around the midwest as we watch Laracon Online on September 14th, 2022.',
+            link: 'https://www.eventbrite.com/e/bloomington-laracon-viewing-party-tickets-406561625767',
+        },
+        {
+            city: 'Bern, Switzerland',
+            desc: 'Don\'t be shy and let\'s meet in Bern for the largest Laravel streaming event. Our plan is to watch Taylor\'s keynote and have a good time. Snacks and drinks are provided.',
+            link: 'https://www.meetup.com/laravel-switzerland-meetup/events/287905154/',
+        },
+        {
+            city: 'Zwolle, The Netherlands',
+            desc: 'Come join the 2Solar development team for the Laracon Online Meet-up in our office in Zwolle. Drinks, pizza and unlimited sharing of knowledge included.',
+            link: 'https://www.eventbrite.com/e/tickets-laravel-online-bij-2solar-software-397063857687',
+        },
+        {
+            city: 'Dodoma, Tanzania',
+            desc: 'Artisans wanna hang out together relax and enjoy Laracon,  if you\'re in Tanzania 🇹🇿 come join us. It\'s gonna be fun!',
+            link: 'https://jasirilabs.com/laracon',
+        },
+        {
+            city: 'Subotica, Serbia',
+            desc: 'In This Meetup, we will stream the Laracon Online event. Besides this, we will order some Pizza and Provide some Beer :)',
+            link: 'https://www.meetup.com/de-DE/42beers-42coders-tech-meetup-in-subotica/events/286748221/',
+        },
+        {
+            city: 'India',
+            desc: 'Laracon India is happening in February 2022, so all different city-based community volunteers decided to host Laracon parties in their cities. Artisans from India want to meet each other and are excited in advance to attend the Laracon online in person.',
+            link: 'https://laracon.in/laracon-online-2022-viewing-party-india.html',
+        },
+        {
+            city: 'Odense, Denmark',
+            desc: 'Come join the Ephort team for Laracon Online Viewing party at our office - we will off course provide IRL drinks and food to accompany the virtuel knowledge.',
+            link: 'https://ephort.dk/blog/laracon-online-2022/',
+        },
+        {
+            city: 'Sofia, Bulgaria',
+            desc: 'Come and hangout with AMPECO development team while watching Laracon Online. We will discuss Laravel and of course our other passion - Electric Vehicles. Pizza and beers are included! 🍕🍺',
+            link: 'https://www.eventbrite.com/e/laracon-viewing-party-by-ampeco-tickets-413988890917',
+        },
+    ]</script>
+
+
+
+    <section id="pre-party" class="from-white to-gray-50 bg-gradient-to-br shadow-gray-200 relative shadow-xl"
+        style="z-index:2">
+        <div class="segment">
+            <h2 class="title">PRE-PARTY</h2>
+            <p class="subtitle">Tune in the official pre-party no other <br class="sm:hidden">than the <em>dynamo duo</em> <br class="sm:block hidden"><a href="https://twitter.com/freekmurze" target="_blank" rel="external" class="hover:underline underline-offset-2 font-bold">@freekmurze</a> and <a href="https://twitter.com/christophrumpel" target="_blank" rel="external" class="hover:underline underline-offset-2 font-bold">@christophrumpel</a> to warm-up the crowd.</p>
+            <p class="lead mt-3">Join us on September the 13th let's discuss the upcoming event.</p>
+            <div class="mx-6">
+                <iframe src="https://www.youtube.com/embed/3Bzb5fsn4Jo" allowfullscreen frameborder="0"
+                    class="aspect-video rounded-xl md:w-3/4 lg:w-2/3 xl:w-1/2 w-full mx-auto mt-6 overflow-hidden shadow-xl">
+                </iframe>
+            </div>
+            <a href="https://www.youtube.com/watch?v=3Bzb5fsn4Jo" class="cta mt-6">
+                Set a reminder
+            </a>
+        </div>
+    </section>
+
+    
+
+
+
+    <section id="cherrymates" style="z-index:0">
+        <div class="segment sm:pt-24 sm:pb-48 bg-no-repeat bg-bottom bg-contain"
+            style="background-image:url('2022-summer/foot.jpg')">
+            <p class="subtitle leading-snug">The <code>&lt;heads/&gt;</code> <br>that brought this website to your browser</p>
+            <ul class="sm:space-x-12 flex items-center justify-center my-6 space-x-3 select-none">
+                <li class="flex flex-col items-center justify-center">
+                    <img class="lazy sm:h-auto flex-none h-32" src="2022-summer/1.gif" data-srcset="2022-summer/cherry-caneco.png 2x" alt="cherrymate: caneco.dev">
+                    <a href="https://caneco.dev/video.mp4" target="_blank" rel="external" class="font-nanum hover:underline block mt-1 text-4xl leading-none tracking-tight text-center">@caneco</a>
+                </li>
+                <li class="flex flex-col items-center justify-center -mt-1">
+                    <img class="lazy sm:h-auto flex-none h-32" src="2022-summer/1.gif" data-srcset="2022-summer/cherry-flick.png 2x" alt="cherrymate: flicknelson.net">
+                    <a href="https://flicknelson.net" target="_blank" rel="external" class="font-nanum hover:underline block mt-3 text-3xl leading-none tracking-tight text-center">@flicknelson</a>
+                </li>
+            </ul>
+            <a href="https://twitter.com/intent/tweet?text=.@caneco%20%26%20@flicknelson%20here's%20a%20cherry%20for%20you%20two%20🍒" target="_blank" rel="external" class="cta my-6">
+                Tweet them a cherry
+            </a>
+        </div>
+    </section>
+
+
+
+    <footer id="footer" class="bg-gradient-to-br from-gray-900 to-black text-gray-400">
+        <div class="sm:text-sm segment text-xs text-center select-none">
+            <p>
+                Produced by
+                <a class="hover:underline focus:outline hover:text-white font-medium text-gray-300" href="https://userscape.com" rel="external" target="_blank" tabindex="-1">UserScape</a>,
+                <a class="hover:underline focus:outline hover:text-white font-medium text-gray-300" href="https://laravel-news.com" rel="external" target="_blank" tabindex="-1">Laravel News</a>,
+                <a class="hover:underline focus:outline hover:text-white font-medium text-gray-300" href="https://laravel.com" rel="external" target="_blank" tabindex="-1">Laravel</a>
+                <span class="sm:inline hidden">|</span>
+                <br class="sm:hidden block">
+                Developed by
+                <a href="https://twitter.com/caneco" rel="external" target="_blank" tabindex="-1" class="hover:underline focus:outline hover:text-white font-medium text-gray-300">Caneco</a>
+                <span>|</span>
+                Illustrated by
+                <a href="https://twitter.com/flicknelson" rel="external" target="_blank" tabindex="-1" class="hover:underline focus:outline hover:text-white font-medium text-gray-300">FlickNelson</a>
+            </p>
+            <p>Copyright &copy; <span x-data x-text="(new Date).getFullYear()">2022</span> <a href="https://userscape.com?ref=laracon" rel="external" target="_blank" tabindex="-1" class="hover:underline focus:outline hover:text-white font-medium text-gray-300">UserScape</a></p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
