@@ -1,6 +1,8 @@
 class DomElement {
   constructor(options) {
+    console.log(options);
     this.el = options.el;
+    this.fallbackTime = options.fallbackTime;
     this.props = options.props;
     this.removeTemplate = options.removeTemplate;
     this.storageEvents = options.storageEvents;
@@ -35,8 +37,8 @@ class DomElement {
 
   minMinDuration() {
     setTimeout(() => {
+      this.minShowTimeDone = true;
       if (this.hasEventToClose) {
-        this.minShowTimeDone = true;
         this.remove();
       }
     }, this.props.minShowTime || 1000);
@@ -45,12 +47,13 @@ class DomElement {
   remove() {
     if (!this.minShowTimeDone) {
       this.hasEventToClose = true;
-      console.log('has event');
       return false;
     }
     this.storageEvents.setLoaded();
     this.domEl.style.transition = `all ${this.durationHide}ms`;
     this.domEl.style.opacity = '0';
+    console.log(this.fallBackTimer);
+    if (this.fallBackTimer) clearTimeout(this.fallBackTimer);
     setTimeout(() => {
       this.domEl.remove();
     }, this.durationHide);

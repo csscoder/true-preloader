@@ -5,6 +5,11 @@ size is no more than 3Kb. The plugin creates a Web Component with a preloader
 and is isolated from the main code. The basic settings allow you to display the preloader based on specific
 scenarios.
 
+**Examples**
+- [Example1](https://csscoder.github.io/true-preloader/demo/example1.html)
+- [Example2](https://csscoder.github.io/true-preloader/demo/example2.html)
+- [Example3 (Webpage)](https://csscoder.github.io/true-preloader/demo/webpage/index.html)
+
 ## How to use
 
 1. Create preloader file. You can add any code for animation scene. This template you can
@@ -22,7 +27,7 @@ scenarios.
    window.templatePreloader = template;
    })();
    ```
-2. Add two files to `<head>`
+2. Add two files to `<head>`, source code [preloader-core.js](https://csscoder.github.io/true-preloader/dist/preloader-core.js)
    ```html
    <html>
       <head>

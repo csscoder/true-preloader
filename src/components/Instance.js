@@ -11,20 +11,7 @@ class Preloader {
       props: this.props,
     });
     this.init();
-  }
-
-  init() {
-    if (typeof window === 'undefined') {
-      return false;
-    }
-
-    if (this.storageEvents.checkAllow()) {
-      this.domElement = new DomElement(this);
-      this.addListenerHide();
-      this.fallbackTimeToHideInit();
-    } else {
-      this.removeTemplate();
-    }
+    this.fallBackTimer = null;
   }
 
   removeTemplate() {
@@ -42,6 +29,20 @@ class Preloader {
     window.addEventListener('preloaderHide', this.boundListener, {
       once: true,
     });
+  }
+
+  init() {
+    if (typeof window === 'undefined') {
+      return false;
+    }
+
+    if (this.storageEvents.checkAllow()) {
+      this.domElement = new DomElement(this);
+      this.addListenerHide();
+      this.fallbackTimeToHideInit();
+    } else {
+      this.removeTemplate();
+    }
   }
 
   fallbackTimeToHideInit() {
