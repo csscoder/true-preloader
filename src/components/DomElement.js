@@ -1,8 +1,7 @@
 class DomElement {
   constructor(options) {
-    console.log(options);
     this.el = options.el;
-    this.fallbackTime = options.fallbackTime;
+    this.fallBackTimer = options.fallBackTimer;
     this.props = options.props;
     this.removeTemplate = options.removeTemplate;
     this.storageEvents = options.storageEvents;
@@ -52,7 +51,6 @@ class DomElement {
     this.storageEvents.setLoaded();
     this.domEl.style.transition = `all ${this.durationHide}ms`;
     this.domEl.style.opacity = '0';
-    console.log(this.fallBackTimer);
     if (this.fallBackTimer) clearTimeout(this.fallBackTimer);
     setTimeout(() => {
       this.domEl.remove();

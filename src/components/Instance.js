@@ -11,14 +11,14 @@ class Preloader {
       props: this.props,
     });
     this.init();
-    this.fallBackTimer = null;
   }
+
+  fallBackTimer
+  boundListener = this.listenerFunc.bind(this);
 
   removeTemplate() {
     window.templatePreloader = null;
   }
-
-  boundListener = this.listenerFunc.bind(this);
 
   listenerFunc() {
     this.domElement.remove();
@@ -46,7 +46,7 @@ class Preloader {
   }
 
   fallbackTimeToHideInit() {
-    const timeFallback = this.props.timeFallback || 6;
+    const timeFallback = this.props.timeFallback || 6000;
     this.fallBackTimer = setTimeout(() => {
       this.domElement.remove();
       window.removeEventListener('preloaderHide', this.boundListener);

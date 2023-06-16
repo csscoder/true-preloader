@@ -4,6 +4,7 @@ import alias from '@rollup/plugin-alias';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import terser from '@rollup/plugin-terser';
+import copy from 'rollup-plugin-copy';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -36,6 +37,13 @@ if (PRODUCTION) {
         drop_console: true,
         drop_debugger: true,
       },
+    }),
+  );
+  plugins.push(
+    copy({
+      targets: [
+        { src: 'dist/preloader-core.js', dest: 'demo' },
+      ]
     }),
   );
 } else {
