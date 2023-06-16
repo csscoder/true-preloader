@@ -6,9 +6,9 @@ and is isolated from the main code. The basic settings allow you to display the 
 scenarios.
 
 **Examples**
-- [Example1](https://csscoder.github.io/true-preloader-core/demo/example1.html)
-- [Example2](https://csscoder.github.io/true-preloader-core/demo/example2.html)
-- [Example3 (Webpage)](https://csscoder.github.io/true-preloader-core/demo/webpage/index.html)
+- [Example1 (minimum show time 2s, fallback time 5s)](https://csscoder.github.io/true-preloader-core/demo/example1.html)
+- [Example2 (minimum show time 2s, fallback time 5s)](https://csscoder.github.io/true-preloader-core/demo/example2.html)
+- [Example3 Webpage (wait full load page, minimum show time 2s, fallback time 10s)](https://csscoder.github.io/true-preloader-core/demo/webpage/index.html)
 
 ## How to use
 
