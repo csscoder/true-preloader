@@ -6,9 +6,9 @@ and is isolated from the main code. The basic settings allow you to display the 
 scenarios.
 
 **Examples**
-- [Example1](https://csscoder.github.io/true-preloader/demo/example1.html)
-- [Example2](https://csscoder.github.io/true-preloader/demo/example2.html)
-- [Example3 (Webpage)](https://csscoder.github.io/true-preloader/demo/webpage/index.html)
+- [Example1](https://csscoder.github.io/true-preloader-core/demo/example1.html)
+- [Example2](https://csscoder.github.io/true-preloader-core/demo/example2.html)
+- [Example3 (Webpage)](https://csscoder.github.io/true-preloader-core/demo/webpage/index.html)
 
 ## How to use
 
@@ -27,7 +27,7 @@ scenarios.
    window.templatePreloader = template;
    })();
    ```
-2. Add two files to `<head>`, source code [preloader-core.js](https://csscoder.github.io/true-preloader/dist/preloader-core.js)
+2. Add two files to `<head>`, source code [preloader-core.js](https://csscoder.github.io/true-preloader-core/dist/preloader-core.js)
    ```html
    <html>
       <head>
