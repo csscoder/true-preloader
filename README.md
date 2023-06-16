@@ -1,4 +1,4 @@
-# True preloader
+# True preloader core
 
 The true purpose of a preloader for a website is to display it within the first second of visiting the site. The core
 size is no more than 3Kb. The plugin creates a Web Component with a preloader
